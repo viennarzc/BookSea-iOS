@@ -18,6 +18,7 @@
 		211B7F8D27A0EC5F000C0EF2 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F8C27A0EC5F000C0EF2 /* Book.swift */; };
 		211B7F8F27A0ED22000C0EF2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F8E27A0ED22000C0EF2 /* ViewModel.swift */; };
 		211B7F9127A0ED33000C0EF2 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F9027A0ED33000C0EF2 /* ItemViewModel.swift */; };
+		211B7F9327A0F987000C0EF2 /* NoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F9227A0F987000C0EF2 /* NoImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		211B7F8C27A0EC5F000C0EF2 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		211B7F8E27A0ED22000C0EF2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		211B7F9027A0ED33000C0EF2 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		211B7F9227A0F987000C0EF2 /* NoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				211B7F5E27A0D029000C0EF2 /* BookSeaApp.swift */,
 				211B7F8B27A0EC57000C0EF2 /* Models */,
 				211B7F6027A0D029000C0EF2 /* ContentView.swift */,
+				211B7F9227A0F987000C0EF2 /* NoImageView.swift */,
 				211B7F9027A0ED33000C0EF2 /* ItemViewModel.swift */,
 				211B7F8E27A0ED22000C0EF2 /* ViewModel.swift */,
 				211B7F8927A0EC3B000C0EF2 /* APIService.swift */,
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				211B7F8F27A0ED22000C0EF2 /* ViewModel.swift in Sources */,
+				211B7F9327A0F987000C0EF2 /* NoImageView.swift in Sources */,
 				211B7F8D27A0EC5F000C0EF2 /* Book.swift in Sources */,
 				211B7F6127A0D029000C0EF2 /* ContentView.swift in Sources */,
 				211B7F8A27A0EC3B000C0EF2 /* APIService.swift in Sources */,

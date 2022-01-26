@@ -13,8 +13,8 @@ struct ContentView: View {
     @State var items: [ItemViewModel] = []
     
     private let columns = [
-        GridItem(.adaptive(minimum: 100)),
-        GridItem(.adaptive(minimum: 100))
+        GridItem(.adaptive(minimum: 150)),
+        GridItem(.adaptive(minimum: 150))
     ]
     
     private var viewModel: ViewModel
@@ -53,6 +53,7 @@ struct ContentView: View {
                                     .frame(width: 150, height: 200, alignment: .center)
                                     .shadow(color: .gray, radius: 10, x: 4, y: 4)
                                 
+                                //shows a default / no image view if book has no image url
                             } else {
                                 NoImageView(title: item.text)
                                     .frame(width: 150, height: 200, alignment: .center)
@@ -84,18 +85,3 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 
-struct NoImageView: View {
-    var title: String
-    
-    var body: some View {
-        
-        VStack {
-            Image(systemName: "book")
-                .padding()
-                .shadow(color: .gray, radius: 10, x: 4, y: 4)
-            Text(title)
-                .font(.body)
-            
-        }
-    }
-}
