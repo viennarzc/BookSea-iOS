@@ -14,6 +14,10 @@
 		211B7F7027A0D02D000C0EF2 /* BookSeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F6F27A0D02D000C0EF2 /* BookSeaTests.swift */; };
 		211B7F7A27A0D02D000C0EF2 /* BookSeaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F7927A0D02D000C0EF2 /* BookSeaUITests.swift */; };
 		211B7F7C27A0D02D000C0EF2 /* BookSeaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F7B27A0D02D000C0EF2 /* BookSeaUITestsLaunchTests.swift */; };
+		211B7F8A27A0EC3B000C0EF2 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F8927A0EC3B000C0EF2 /* APIService.swift */; };
+		211B7F8D27A0EC5F000C0EF2 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F8C27A0EC5F000C0EF2 /* Book.swift */; };
+		211B7F8F27A0ED22000C0EF2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F8E27A0ED22000C0EF2 /* ViewModel.swift */; };
+		211B7F9127A0ED33000C0EF2 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B7F9027A0ED33000C0EF2 /* ItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,11 @@
 		211B7F7527A0D02D000C0EF2 /* BookSeaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookSeaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		211B7F7927A0D02D000C0EF2 /* BookSeaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSeaUITests.swift; sourceTree = "<group>"; };
 		211B7F7B27A0D02D000C0EF2 /* BookSeaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSeaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		211B7F8827A0EAD3000C0EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		211B7F8927A0EC3B000C0EF2 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		211B7F8C27A0EC5F000C0EF2 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		211B7F8E27A0ED22000C0EF2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		211B7F9027A0ED33000C0EF2 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +103,13 @@
 		211B7F5D27A0D029000C0EF2 /* BookSea */ = {
 			isa = PBXGroup;
 			children = (
+				211B7F8827A0EAD3000C0EF2 /* Info.plist */,
 				211B7F5E27A0D029000C0EF2 /* BookSeaApp.swift */,
+				211B7F8B27A0EC57000C0EF2 /* Models */,
 				211B7F6027A0D029000C0EF2 /* ContentView.swift */,
+				211B7F9027A0ED33000C0EF2 /* ItemViewModel.swift */,
+				211B7F8E27A0ED22000C0EF2 /* ViewModel.swift */,
+				211B7F8927A0EC3B000C0EF2 /* APIService.swift */,
 				211B7F6227A0D02D000C0EF2 /* Assets.xcassets */,
 				211B7F6427A0D02D000C0EF2 /* Preview Content */,
 			);
@@ -125,6 +139,14 @@
 				211B7F7B27A0D02D000C0EF2 /* BookSeaUITestsLaunchTests.swift */,
 			);
 			path = BookSeaUITests;
+			sourceTree = "<group>";
+		};
+		211B7F8B27A0EC57000C0EF2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				211B7F8C27A0EC5F000C0EF2 /* Book.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211B7F8F27A0ED22000C0EF2 /* ViewModel.swift in Sources */,
+				211B7F8D27A0EC5F000C0EF2 /* Book.swift in Sources */,
 				211B7F6127A0D029000C0EF2 /* ContentView.swift in Sources */,
+				211B7F8A27A0EC3B000C0EF2 /* APIService.swift in Sources */,
 				211B7F5F27A0D029000C0EF2 /* BookSeaApp.swift in Sources */,
+				211B7F9127A0ED33000C0EF2 /* ItemViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +447,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BookSea/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BookSea/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +476,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BookSea/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BookSea/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
