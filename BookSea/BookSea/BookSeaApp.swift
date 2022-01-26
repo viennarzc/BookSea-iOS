@@ -11,7 +11,7 @@ import SwiftUI
 struct BookSeaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: ViewModel(api: BooksAPI()))
         }
     }
 }
