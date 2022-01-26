@@ -1,6 +1,9 @@
 # BookSea-iOS
 Simple book finder using Google Books API written in SwiftUI
 
+## Pattern
+trying to use MVVM with SwiftUI
+
 ## Screens
 ![Simulator Screen Recording - iPhone 13 mini - 2022-01-26 at 11 42 30](https://user-images.githubusercontent.com/10010249/151100641-b4d5660c-e2ee-4915-8e25-cea0a97136fb.gif)
 
